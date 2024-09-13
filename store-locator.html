@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Locator - Alberto Clocks</title>
+<head>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="A.gif">
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="footer.css">
+
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+        body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #000000;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#map-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#map {
+    height: 400px;
+    width: 50%;
+    background-color: blue;
+}
+
+
+
+
+
+     </style>
+</head>
+<body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+              <img src="A.gif" alt="Logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about us.html">About</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href=" brands"
+                    id="collectionsDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">Men
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+                    <a class="dropdown-item" href="rolex.html">Rolex</a>
+                    <a class="dropdown-item" href="michael-kors.html">Michael Kors</a>
+                    <a class="dropdown-item" href="citizen.html">Citizen Eco-Drive</a>
+                    <a class="dropdown-item" href="bulova.html">Bulova</a>
+                  </div>
+                  
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href=" brands"
+                    id="collectionsDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"> Women
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+                    <a class="dropdown-item" href="rolex-women.html">Rolex</a>
+                    <a class="dropdown-item" href="women-michael.html">Michael Kors</a>
+                    <a class="dropdown-item" href="citizen-women.html">Citizen Eco-Drive</a>
+                    <a class="dropdown-item" href="bulova-women.html">Bulova</a>
+                  </div>
+                  
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href=" brands"
+                    id="collectionsDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"> Collection
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+                    <a class="dropdown-item" href="vintage.html">Vintage</a>
+                    <a class="dropdown-item" href="smart-watches.html">Smart Watches</a>
+                    <a class="dropdown-item" href="luxury.html">Luxury</a>
+                  </div>
+                  
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="Faqs.html">FaQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact us.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav> 
+         
+    <header>
+        <h1 style="padding-top: 20px; font-style: italic; font-size: 30px;">Find an Alberto Clocks Near You</h1>
+    </header>
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+    <script>
+      function initMap() {
+        var Aptech = {
+          lat: 24.90571769,
+          lng: 67.07942426};
+        var abc = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: Aptech
+        });
+        var marker = new google.maps.Marker({
+          position: Aptech,
+          map: abc
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg272BuCY-f0VDYyrc9O_1OYHXjDThoSQ
+&callback=initMap">
+    </script>
+    <!-- footer -->
+       <footer class="custom-footer" >
+        <div class="custom-container">
+            <div class="row">
+                <div class= "col-md-3 footer-col" >
+                    <h4>Brands</h4>
+                    <ul>
+                      <li><a href="rolex.html">Rolex</a></li>
+                      <li><a href="michael-kors.html">Michael Kors</a></li>
+                      <li><a href="citizen.html">Eco-Drive Citizen</a></li>
+                      <li><a href="bulova.html">Bulova</a></li>
+                  </ul>
+                   
+                </div>
+                <div class="col-md-3 footer-col">
+                    <h4>Customer Service </h4>
+                    <ul>
+                      <li><a href="my-account.html">My Account</a></li>
+                      <li><a href="return-policy.html">Policy Section</a></li>
+                      <li><a href="contact us.html"> Contact Us </a></li>
+                
+                  </ul>
+                </div><div class="col-md-3 footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                      <li><a href="about us.html">About us</a></li>
+                        <li><a href="terms-of-service.html">Terms Of Service</a></li>
+                        <li><a href="store-locator.html">Store-locator</a></li>
+                        <li><a href="Faqs.html">FaQs</a></li>
+                       
+                    </ul>
+                </div><div class="col-md-3 footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                       <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                       <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                       <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                       <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </footer>
+</body>
+</html>

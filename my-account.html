@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="A.gif">
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="footer.css">
+  </head>
+  <body>
+
+ <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+}
+
+.login-page {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    /* Ensures the container takes up available space */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-form-wrapper {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(7, 137, 170, 0.1);
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-email-label,
+.login-password-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-email-input,
+.login-password-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.login-submit-button {
+    padding: 10px;
+    background:  #1c40b6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-submit-button:hover {
+    background: rgb(59, 58, 58);
+}
+
+.login-signup-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-signup-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.login-signup-link:hover {
+    text-decoration: underline;
+}
+.custom-footer h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #2fb6c0;
+  height: 2px;
+  margin-left: 40%;
+  width: 50px;
+}
+
+
+    </style>
+
+<div class="login-page">
+    <div class="login-container">
+        <div class="login-form-wrapper">
+            <h1 class="login-heading">Login</h1>
+            <form action="/login" method="post" class="login-form">
+                <label for="email" class="login-email-label">Email:</label>
+                <input type="email" id="email" name="email" class="login-email-input" required>
+
+                <label for="password" class="login-password-label">Password:</label>
+                <input type="password" id="password" name="password" class="login-password-input" required>
+
+                <button type="submit" class="login-submit-button">Login</button>
+            </form>
+            <p class="login-signup-text">Don't have an account? <a href="contact us.html" class="login-signup-link">Sign up</a></p>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div style=" text-align: center; padding: 1em 0; width: 100%; margin-top: auto; padding-top: 10px; ;">
+    <footer class="custom-footer"> 
+        
+        <div class="custom-container">
+            <div class="row">
+                <div class= "col-md-3 footer-col" >
+                    <h4>Brands</h4>
+                    <ul>
+                      <li><a href="rolex.html">Rolex</a></li>
+                      <li><a href="michael-kors.html">Michael Kors</a></li>
+                      <li><a href="citizen.html">Eco-Drive Citizen</a></li>
+                      <li><a href="bulova.html">Bulova</a></li>
+                  </ul>
+                   
+                </div>
+                <div class="col-md-3 footer-col">
+                    <h4>Customer Service </h4>
+                    <ul>
+                      <li><a href="my-account.html">My Account</a></li>
+                      <li><a href="return-policy.html">Policy Section</a></li>
+                      <li><a href="contact us.html"> Contact Us </a></li>
+                
+                  </ul>
+                </div><div class="col-md-3 footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                      <li><a href="about us.html">About us</a></li>
+                        <li><a href="terms-of-service.html">Terms Of Service</a></li>
+                     
+                        <li><a href="Faqs.html">Faqs</a></li>
+                        <li><a href="store-locator.html">Store-locator</a></li>
+                       
+                    </ul>
+                </div><div class="col-md-3 footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                       <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                       <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                       <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                       <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </footer>
+</div>
+</head>
+<body>

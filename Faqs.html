@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FaQs</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="A.gif">
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="footer.css">
+    <style>
+      /* faqs css */
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.faq-container h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-question {
+    font-size: 20px;
+    color: #01dbc2;
+    cursor: pointer; /* Add pointer cursor to indicate clickable */
+}
+
+.faq-answer {
+    display: none; /* Hide answer initially */
+    font-size: 19px;
+    color: #ffffff;
+}
+
+.faq-answer.show {
+    display: block; /* Show answer when .show class is added */
+}
+
+.faq-item ol {
+    margin-top: 10px;
+}
+
+.faq-item ol li {
+    margin-bottom: 5px;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="A.gif" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about us.html">About</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href=" brands"
+                id="collectionsDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false">Men
+              </a>
+              <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+                <a class="dropdown-item" href="rolex.html">Rolex</a>
+                <a class="dropdown-item" href="michael-kors.html">Michael Kors</a>
+                <a class="dropdown-item" href="citizen.html">Citizen Eco-Drive</a>
+                <a class="dropdown-item" href="bulova.html">Bulova</a>
+              </div>
+              
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href=" brands"
+                id="collectionsDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"> Women
+              </a>
+              <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+                <a class="dropdown-item" href="rolex-women.html">Rolex</a>
+                <a class="dropdown-item" href="women-michael.html">Michael Kors</a>
+                <a class="dropdown-item" href="citizen-women.html">Citizen Eco-Drive</a>
+                <a class="dropdown-item" href="bulova-women.html">Bulova</a>
+              </div>
+              
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href=" brands"
+                id="collectionsDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"> Collection
+              </a>
+              <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+                <a class="dropdown-item" href="vintage.html">Vintage</a>
+                <a class="dropdown-item" href="smart-watches.html">Smart Watches</a>
+                <a class="dropdown-item" href="luxury.html">Luxury</a>
+              </div>
+              
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="Faqs.html">FaQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact us.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+     <!-- FaQs Content -->
+     <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq-item">
+            <h2 class="faq-question">What are Alberto clocks known for?</h2>
+            <p class="faq-answer">Alberto clocks are renowned for their elegant design, precision craftsmanship, and high-quality materials. Each clock is meticulously engineered to offer both aesthetic appeal and reliable timekeeping, making them a stylish addition to any space.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h2 class="faq-question">Where are Alberto clocks manufactured?</h2>
+            <p class="faq-answer">Alberto clocks are crafted in renowned watchmaking regions, combining traditional craftsmanship with modern technology. The manufacturing facilities are located in Switzerland, ensuring high standards of quality and precision.</p>
+        </div>
+        <div class="faq-item">
+       <h2 class="faq-question"> Are Alberto clocks covered by a warranty?</h2>
+       <p class="faq-answer"> Yes, Alberto clocks come with a standard warranty that covers manufacturing defects and issues with materials.
+         The duration and specific terms of the warranty may vary by model. Please refer to your warranty card or contact customer service for detailed information about the warranty coverage for your specific clock.</p>
+        </div>
+  
+       <div class="faq-item"> 
+        <h2 class="faq-question">How do I maintain my Alberto clock?</h2>
+    <p class="faq-answer">Regular maintenance will keep your Alberto clock in top condition. <br>
+        Here are some tips:
+        <br>
+       * Keep it clean: Dust the clock regularly with a soft, dry cloth. Avoid using harsh chemicals. <br>
+       * Check for accuracy: Ensure the clock is running accurately and adjust if necessary. <br>
+        *Service intervals: Mechanical clocks should be serviced by a professional every 3-5 years.</p>
+       </div>
+    <div class="faq-item">
+      <h2 class="faq-question"> What should I do if my Alberto clock is not working?</h2>
+<p class="faq-answer">  If your Alberto clock is not working, try the following troubleshooting steps: <br>
+
+* Check the power source: Ensure that the clock is properly connected to a power source or that the battery is functioning. <br>
+* Reset the clock: If applicable, reset the clock according to the instructions in the user manual. <br>
+* Inspect for damage: Check for any visible signs of damage or loose components. <br>
+If the issue persists, contact our customer service team or a professional repair service for further assistance.</p>
+  </div>
+
+      <div class="faq-item">
+<h2 class="faq-question"> How can I purchase replacement parts for my Alberto clock? </h2>
+<p class="faq-answer"> Replacement parts for Alberto clocks can be purchased through authorized dealers or directly from our website. 
+ Please contact our customer service team with details about the specific part you need, and they will assist you in obtaining the correct replacement.</p>
+      </div>
+
+   <div class="faq-item">
+<h2 class="faq-question"> Where can I find the user manual for my Alberto clock? </h2>
+<p class="faq-answer"> User manuals for Alberto clocks can be downloaded from our website or requested from our customer service team. 
+ If you need a specific manual, please provide the model number of your clock for accurate assistance. </p>   
+    </div>
+
+</div>
+<!-- Footer -->
+<footer class="custom-footer">
+    <div class="custom-container">
+        <div class="row">
+            <div class="col-md-3 footer-col">
+                <h4>Brands</h4>
+                <ul>
+                  <li><a href="rolex.html">Rolex</a></li>
+                  <li><a href="michael-kors.html">Michael Kors</a></li>
+                  <li><a href="citizen.html">Eco-Drive Citizen</a></li>
+                  <li><a href="bulova.html">Bulova</a></li>
+              </ul>
+               
+            </div>
+            <div class="col-md-3 footer-col">
+                <h4>Customer Service </h4>
+                <ul>
+                  <li><a href="my-account.html">My Account</a></li>
+                  <li><a href="return-policy.html">Policy Section</a></li>
+                  <li><a href="contact us.html"> Contact Us </a></li>
+            
+              </ul>
+            </div><div class="col-md-3 footer-col">
+                <h4>Legal</h4>
+                <ul>
+                  <li><a href="about us.html">About us</a></li>
+                    <li><a href="terms-of-service.html">Terms Of Service</a></li>
+        
+                    <li><a href="Faqs.html">FaQs</a></li>
+                    <li><a href="store-locator.html">Store-locator</a></li>
+                   
+                </ul>
+            </div><div class="col-md-3 footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                   <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                   <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                   <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+ 
+ </footer>
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(function(question) {
+        question.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+
+            if (answer.classList.contains('show')) {
+                answer.classList.remove('show');
+            } else {
+                answer.classList.add('show');
+            }
+        });
+    });
+});
+
+ </script>
+  </body>
+</html>

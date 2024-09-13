@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+   
+    transition: all .2s linear;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(90deg , #000 60%, #3e3f43 40.1%);
+    padding-bottom: 70px;
+}
+
+.container form{
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10 px rgba(0,0,0,.1);
+}
+#fullname{
+    width:280px ;
+}
+#email{
+    width:280px ;
+}
+#address{
+    width:280px ;
+}
+#city{
+    width:280px ;
+}
+#nameoncard{
+    width:280px ;
+}
+#creditcard{
+    width:280px ;
+}
+#contactnum{
+    width:280px ;
+}
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.container form .row .col{
+    flex: 1 1 250px;
+}
+.container form .row .col .tittle{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container form .row .col .inputbox{
+    margin: 15px 0;
+}
+
+.container form .row .col .inputbox span{
+    margin-bottom:10px;
+    display: block;
+}
+.container form .row .col .inputbox input{
+    width: 100px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputbox input:focus{
+    border: 1px solid #000;
+}
+
+.container form .row .col .inputbox img{
+    margin-top: 2px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+width:100%;
+padding: 12px;
+font-size: 17px;
+background:#000;
+color: #fff;
+margin-top: 5px;
+cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+    color: #CAE8FF;
+}

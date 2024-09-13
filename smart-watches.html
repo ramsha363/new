@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Watches</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="A.gif" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+<link rel="stylesheet" href="footer.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 1em; /* Adds space between the cards */
+}
+
+.product-card {
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0 5px 6px #01dbc2;
+    font-family: 'Poppins', sans-serif;
+    margin: 1em;
+    flex: 1 1 calc(20% - 2em); /* Ensure only 5 cards per row */
+    box-sizing: border-box;
+    text-align: center; /* Center-align text inside the card */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: auto; 
+}
+
+.product-card h4 {
+    font-size: 1.3em;
+    margin: 0.3em 0;
+}
+
+.product-card-details {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em; 
+}
+
+.product-card-buttons {
+    display: flex;
+    justify-content: center; 
+    gap: 0.5em; 
+    margin-top: auto;
+}
+
+.product-card button {
+    background-color: #456abd;
+    color: white;
+    border: none;
+ 
+    padding: 0.3em 0.5em; 
+    cursor: pointer;
+    font-size: 0.9em; 
+    flex: 1; 
+    white-space: nowrap;
+}
+
+.product-card:hover {
+    background-color: grey;
+    color: rgb(255, 255, 255);
+}
+
+.product-card:hover button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1200px) {
+    .product-card {
+        flex: 1 1 calc(33.33% - 2em); 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-card {
+        flex: 1 1 calc(50% - 2em); 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .product-card {
+        flex: 1 1 calc(100% - 2em); 
+        font-size: 0.9em;
+    }
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="A.gif" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about us.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href=" brands"
+              id="collectionsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Men
+            </a>
+            <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+              <a class="dropdown-item" href="rolex.html">Rolex</a>
+              <a class="dropdown-item" href="michael-kors.html">Michael Kors</a>
+              <a class="dropdown-item" href="citizen.html">Citizen Eco-Drive</a>
+              <a class="dropdown-item" href="bulova.html">Bulova</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href=" brands"
+              id="collectionsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Women
+            </a>
+            <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+              <a class="dropdown-item" href="rolex-women.html">Rolex</a>
+              <a class="dropdown-item" href="women-michael.html"
+                >Michael Kors</a
+              >
+              <a class="dropdown-item" href="citizen-women.html"
+                >Citizen Eco-Drive</a
+              >
+              <a class="dropdown-item" href="bulova-women.html">Bulova</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href=" brands"
+              id="collectionsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Collection
+            </a>
+            <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+              <a class="dropdown-item" href="vintage.html">Vintage</a>
+              <a class="dropdown-item" href="smart-watches.html">Smart Watches</a>
+              <a class="dropdown-item" href="luxury.html">Luxury</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Faqs.html">FaQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact us.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- product card -->
+    <!-- 1 -->
+    <div class="product-card-container">
+      <div class="product-card">
+        <img src="smart watches/5.webp" alt="Smart Watch" />
+        <h4 >Smart Watch</h4>
+        <div class="product-card-details">
+          <span>$2599.33</span>
+          <div class="product-card-buttons">
+            <button onclick="buyNow(' Smart Watch', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Smart Watch','$209.99')">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="product-card">
+        <img src="https://zerolifestyle.co/cdn/shop/files/Layer_4_B.webp?v=1719928924" alt="" />
+        <h4>Smart Watch</h4>
+        <div class="product-card-details">
+          <span>$4555.33</span>
+          <div class="product-card-buttons">
+            <button onclick="buyNow(' Smart Watch', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Smart Watch','$209.99')">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="product-card">
+        <img src="https://zerolifestyle.co/cdn/shop/files/10_399dc067-cd8e-4eed-b2e3-2596b2aa4f2d.webp?v=1702637681" alt="" />
+        <h4 style="margin-top: 60px;">Smart Watch</h4>
+        <div class="product-card-details">
+          <span>$2959.33</span>
+          <div class="product-card-buttons">
+            <button onclick="buyNow(' Smart Watch', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Smart Watch','$209.99')">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="product-card">
+        <img src=" https://zerolifestyle.co/cdn/shop/files/grey_2.png?v=1719805443" alt="" />
+        <h4 style="margin-top: 20px;">Smart Watch</h4>
+        <div class="product-card-details">
+          <span>$299.33</span>
+          <div class="product-card-buttons">
+            <button onclick="buyNow(' Smart Watch', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Smart Watch','$209.99')">Add to cart</button>
+          </div>
+        </div>
+      </div>
+     
+      <!-- 5 -->
+      <div class="product-card">
+        <img src="https://zerolifestyle.co/cdn/shop/files/Blue_4efafdef-3562-4b35-b9ad-0f77da9a81c5.png?v=1714132013" alt="" />
+        <h4 style="margin-top: 40px;">Smart Watch</h4>
+        <div class="product-card-details">
+          <span>$2959.33</span>
+          <div class="product-card-buttons">
+            <button onclick="buyNow(' Smart Watch', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Smart Watch','$209.99')">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="product-card">
+        <img src="https://zerolifestyle.co/cdn/shop/files/Dark-Black_1_acacb4ec-7d87-4273-acf4-6c43f946d291.webp?v=1709827744" alt="" />
+        <h4 style="margin-top: 70px;">Smart Watch</h4>
+        <div class="product-card-details">
+          <span>$2599.33</span>
+          <div class="product-card-buttons">
+            <button onclick="buyNow(' Smart Watch', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Smart Watch','$209.99')">Add to cart</button>
+          </div>
+        </div>
+      </div>
+<!-- 7 -->
+<div class="product-card">
+  <img src="https://zerolifestyle.co/cdn/shop/files/3-removebg-preview.png?v=1703782830" alt="" />
+  <h4 style="margin-top: 40px;">Smart Watch</h4>
+  <div class="product-card-details">
+    <span>$4299.33</span>
+    <div class="product-card-buttons">
+      <button onclick="buyNow(' Smart Watch', '$209.99')">Buy now</button>
+      <button onclick="addToCart('Smart Watch','$209.99')">Add to cart</button>
+    </div>
+  </div>
+</div>
+    <!-- 8 -->
+    <div class="product-card">
+      <img src="https://zerolifestyle.co/cdn/shop/files/Masalared_2.png?v=1719805443" alt="" />
+      <h4 style="margin-top: 60px;">Smart Watch</h4>
+      <div class="product-card-details">
+        <span>$2499.33</span>
+        <div class="product-card-buttons">
+          <button onclick="buyNow(' Smart Watch', '$209.99')">Buy now</button>
+          <button onclick="addToCart('Smart Watch','$209.99')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- 9 -->
+    <div class="product-card">
+      <img src="https://zerolifestyle.co/cdn/shop/files/Golden_1_6f6e9510-7e0b-48ba-8454-27156184d94c.png?v=1714131357" alt="" />
+      <h4 style="margin-top: 50px;">Smart Watch</h4>
+      <div class="product-card-details">
+        <span>$2969.33</span>
+        <div class="product-card-buttons">
+          <button onclick="buyNow(' Smart Watch', '$209.99')">Buy now</button>
+          <button onclick="addToCart('Smart Watch','$209.99')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- 10 -->
+    <div class="product-card">
+      <img src="https://zerolifestyle.co/cdn/shop/files/4_d0a70b8a-9222-4a9d-867d-791cd979be75.png?v=1717403065" alt="" />
+      <h4 style="margin-top: 30px;">Smart Watch</h4>
+      <div class="product-card-details">
+        <span>$4554.33</span>
+        <div class="product-card-buttons">
+          <button onclick="buyNow(' Smart Watch', '$209.99')">Buy now</button>
+          <button onclick="addToCart('Smart Watch','$209.99')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- 11 -->
+    <div class="product-card">
+      <img src="https://zerolifestyle.co/cdn/shop/files/3_8b889ce3-7101-4ccd-b747-03446c3aafdf.png?v=1717406207" alt="" />
+      <h4 style="margin-top: 0px;">Smart Watch</h4>
+      <div class="product-card-details">
+        <span>$2949.33</span>
+        <div class="product-card-buttons">
+          <button onclick="buyNow(' Smart Watch', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Smart Watch','$209.99')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- 12 -->
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/0003/5815/4293/files/prestigeChain-Animation2.gif?v=1716046492" alt="" />
+      <h4 style="margin-top: 90px;">Smart Watch</h4>
+      <div class="product-card-details">
+        <span>$2959.33</span>
+        <div class="product-card-buttons">
+          <button onclick="buyNow(' Smart Watch', '$209.99')">Buy now</button>
+          <button onclick="addToCart('Smart Watch','$209.99')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- footer -->
+  <footer class="custom-footer">
+  <div class="custom-container">
+      <div class="row">
+          <div class= "col-md-3 footer-col" >
+              <h4>Brands</h4>
+              <ul>
+                <li><a href="rolex.html">Rolex</a></li>
+                <li><a href="michael-kors.html">Michael Kors</a></li>
+                <li><a href="citizen.html">Eco-Drive Citizen</a></li>
+                <li><a href="bulova.html">Bulova</a></li>
+            </ul>
+             
+          </div>
+          <div class="col-md-3 footer-col">
+              <h4>Customer Service </h4>
+              <ul>
+                <li><a href="my-account.html">My Account</a></li>
+                <li><a href="return-policy.html">Policy Section</a></li>
+                <li><a href="contact us.html"> Contact Us </a></li>
+          
+            </ul>
+          </div><div class="col-md-3 footer-col">
+              <h4>Legal</h4>
+              <ul>
+                <li><a href="about us.html">About us</a></li>
+                  <li><a href="terms-of-service.html">Terms Of Service</a></li>
+               
+                  <li><a href="Faqs.html">FaQs</a></li>
+                  <li><a href="store-locator.html">Store-locator</a></li>
+                 
+              </ul>
+          </div><div class="col-md-3 footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                 <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                 <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                 <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</footer>
+<script>
+  // Handle "Buy now" button click
+  function buyNow(productName, productPrice) {
+  
+      localStorage.setItem('productName', productName);
+      localStorage.setItem('productPrice', productPrice);
+      
+      // Redirect to the billing form page
+      window.location.href = 'billing-form.html'; 
+  }
+  
+  // Handle "Add to cart" button click
+  function addToCart(productName, productPrice) {
+  
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      
+      // Add the new product to the cart
+      cart.push({ name: productName, price: productPrice });
+      
+   
+      localStorage.setItem('cart', JSON.stringify(cart));
+      
+    
+      alert('Product added to cart');
+  }
+  </script>
+  </body>
+</html>

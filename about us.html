@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="A.gif">
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="footer.css">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="A.gif" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about us.html">About</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href=" brands"
+              id="collectionsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">Men
+            </a>
+            <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+              <a class="dropdown-item" href="rolex.html">Rolex</a>
+              <a class="dropdown-item" href="michael-kors.html">Michael Kors</a>
+              <a class="dropdown-item" href="citizen.html">Citizen Eco-Drive</a>
+              <a class="dropdown-item" href="bulova.html">Bulova</a>
+            </div>
+            
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href=" brands"
+              id="collectionsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"> Women
+            </a>
+            <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+              <a class="dropdown-item" href="rolex-women.html">Rolex</a>
+              <a class="dropdown-item" href="women-michael.html">Michael Kors</a>
+              <a class="dropdown-item" href="citizen-women.html">Citizen Eco-Drive</a>
+              <a class="dropdown-item" href="bulova-women.html">Bulova</a>
+            </div>
+            
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href=" brands"
+              id="collectionsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"> Collection
+            </a>
+            <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+              <a class="dropdown-item" href="vintage.html">Vintage</a>
+              <a class="dropdown-item" href="smart-watches.html">Smart Watches</a>
+              <a class="dropdown-item" href="luxury.html">Luxury</a>
+            </div>
+            
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="Faqs.html">FaQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact us.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav> 
+    <!-- About Us Section -->
+    <section class="about-us">
+      <div class="container">
+        <div class="row about">
+          <div class="col-12 col-md-6">
+            <img src="smart watches/acbb2eff9e2c8efc89953f8b241c789d-300x300.png" class="pic" alt="About Us Image" height="100% " width="100%">
+          </div>
+          <div class="col-12 col-md-6 text">
+            <h2>About Us!</h2>
+            <h5>Alberto Clock Watches <span style="color: #01dbc2;">Designer!</span></h5>
+            <p style="font-size: 20px;">
+              Welcome to Alberto Clock, where time is not just measured, but crafted into elegance and precision. At Alberto Clock, we believe that a watch is more than a timekeeping device—it's a reflection of one's style, personality, and aspirations. Founded in 2024, we have dedicated ourselves to creating exquisite timepieces that seamlessly blend tradition with innovation.
+            </p>
+            <div class="data">
+              <a href="#" class="hire" id="moreButton">More About</a>
+              <div id="moreContent" style="display: none;">
+                Our journey began with a passion for horology and a commitment to quality craftsmanship. Each Alberto Clock watch is meticulously designed, using only the finest materials and Swiss engineering, to ensure unparalleled accuracy and durability. Whether you prefer the timeless allure of a classic design or the cutting-edge features of our modern collections, each watch is crafted to exceed expectations.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      document.getElementById('moreButton').addEventListener('click', function() {
+        var moreContent = document.getElementById('moreContent');
+        if (moreContent.style.display === 'none') {
+          moreContent.style.display = 'block';
+          this.textContent = 'Less About'; // Change button text when showing more content
+        } else {
+          moreContent.style.display = 'none';
+          this.textContent = 'More About'; // Change button text when hiding content
+        }
+      });
+    </script>
+
+
+
+
+
+<!-- footer-section -->
+    <footer class="custom-footer">
+      <div class="custom-container">
+          <div class="row">
+              <div class="col-md-3 footer-col">
+                  <h4>Brands</h4>
+                  <ul>
+                    <li><a href="rolex.html">Rolex</a></li>
+                    <li><a href="michael-kors.html">Michael Kors</a></li>
+                    <li><a href="citizen.html">Eco-Drive Citizen</a></li>
+                    <li><a href="bulova.html">Bulova</a></li>
+                </ul>
+                 
+              </div>
+              <div class="col-md-3 footer-col">
+                  <h4>Customer Service </h4>
+                  <ul>
+                    <li><a href="my-account.html">My Account</a></li>
+                    <li><a href="return-policy.html"> Policy Section</Section></a></li>
+                    <li><a href="contact us.html"> Contact Us </a></li>
+              
+                </ul>
+              </div><div class="col-md-3  footer-col">
+                  <h4>Legal</h4>
+                  <ul>
+                    <li><a href="about us.html">About us</a></li>
+                      <li><a href="terms-of-service.html">Terms Of Service</a></li>
+                      <li><a href="Faqs.html">FaQs</a></li>
+                     <li><a href="store-locator.html">Store-locator</a></li>
+                     
+                  </ul>
+              </div><div class="col-md-3  footer-col">
+                  <h4>Follow Us</h4>
+                  <div class="social-links">
+                     <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                     <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                     <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                     <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+  
+  </footer>
+    
+    
+  </body>
+</html>
+

@@ -1,0 +1,109 @@
+ /* Custom CSS for animations and hover effects */
+ .navbar {
+  position: sticky;
+  top: 0; 
+  width: 100%;
+  background-color: #000; 
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+ .navbar-nav .nav-item .nav-link:hover {
+  color: #01dbc2;
+  transition: color 0.3s ease-in-out;
+}
+.navbar-nav .nav-item .nav-link{
+  color: white;
+  font-size: 18px;
+}
+.navbar-brand:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-menu {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+}
+
+
+
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.navbar-brand img {
+  height: 40px;
+}
+ 
+
+
+ .hero-section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.hero-section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero-section .content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-section h1 {
+  animation: fadeInDown 2s;
+}
+
+.hero-section p {
+  animation: fadeInUp 2s;
+}
+
+.hero-section img {
+  animation: fadeInUp 2s;
+  max-width: 300px;
+}
+
+
+

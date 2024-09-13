@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="utf-8">
+      <title>Michael Kors</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <link rel="icon" type="image/x-icon" href="A.gif">
+         <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+      <link rel="stylesheet" href="brands.css">
+      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="footer.css">
+<style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Allison&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 25% off css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --dark-blue: #0A1D3C;
+  --light-gray: #E5E5E5;
+  --white: #fff;
+  --light-peach: #f9e3bc;
+  --dark-gray: #3e3f43;
+  --light--black: #1d1d1d;
+}
+
+.section-four {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  background-image: url(https://static-01.daraz.pk/p/6562c02682ae0ec7ce13a046f74e861f.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  padding: 2rem; 
+}
+
+.section-four::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+}
+
+.section-four .content {
+  position: absolute; 
+  top: 1rem; 
+  left: 1rem; 
+  z-index: 1;
+  color: #ffffff;
+  padding: 1rem;
+
+  border-radius: 10px;
+  max-width: 90%; 
+  text-align: left; 
+}
+
+.section-four-offer {
+  font-size: 5rem; 
+  font-family: 'Allison', cursive;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.section-four-heading {
+  font-size: 2.5rem; 
+  color: #01dbc2 ;
+  margin-bottom: 1rem;
+}
+
+.section-four-btn {
+  font-size: 1.1rem;
+  padding: 1rem 1.7rem;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 10%;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.section-four-btn:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 576px) {
+  .section-four {
+    flex-direction: column;
+    height: 60%; 
+    align-items: flex-start; 
+    padding: 1rem; 
+    position: relative; 
+  }
+
+  .section-four .content {
+    position: absolute;
+    top: 2rem; 
+    left: 1rem; 
+    max-width: calc(100% - 2rem); 
+    text-align: left; 
+
+  .section-four-offer {
+    font-size: 2.5rem; 
+    margin-top: -30px;
+    margin-left: -10px;
+  }
+
+  .section-four-heading {
+    font-size: 1.5rem;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+
+  .section-four-btn {
+    font-size: 0.8rem; 
+    margin-top: 0.5rem; 
+    position: relative; 
+  margin-top: -10px; 
+  margin-left: -20px;
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 577px) {
+  .section-four {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-four .content {
+    text-align: left;
+    max-width: 40%; 
+    margin-top: 2rem;
+  }
+
+  .section-four-offer {
+    font-size: 3.9rem;
+  }
+
+  .section-four-heading {
+    font-size: 2.5rem;
+  }
+
+  .section-four-btn {
+    font-size: 1rem;
+  }
+}
+}
+
+</style>
+     
+   </head>
+   <body>
+ <!-- Navigation Bar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <a class="navbar-brand" href="#">
+     <img src="A.gif" alt="Logo" />
+   </a>
+   <button
+     class="navbar-toggler"
+     type="button"
+     data-toggle="collapse"
+     data-target="#navbarNav"
+     aria-controls="navbarNav"
+     aria-expanded="false"
+     aria-label="Toggle navigation"
+   >
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav ml-auto">
+       <li class="nav-item">
+         <a class="nav-link" href="index.html">Home</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="about us.html">About</a>
+       </li>
+       
+       <li class="nav-item dropdown">
+         <a
+           class="nav-link dropdown-toggle"
+           href=" brands"
+           id="collectionsDropdown"
+           role="button"
+           data-toggle="dropdown"
+           aria-haspopup="true"
+           aria-expanded="false">Men
+         </a>
+         <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+           <a class="dropdown-item" href="rolex.html">Rolex</a>
+           <a class="dropdown-item" href="michael-kors.html">Michael Kors</a>
+           <a class="dropdown-item" href="citizen.html">Citizen Eco-Drive</a>
+           <a class="dropdown-item" href="bulova.html">Bulova</a>
+         </div>
+         
+       </li>
+       <li class="nav-item dropdown">
+         <a
+           class="nav-link dropdown-toggle"
+           href=" brands"
+           id="collectionsDropdown"
+           role="button"
+           data-toggle="dropdown"
+           aria-haspopup="true"
+           aria-expanded="false"> Women
+         </a>
+         <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+           <a class="dropdown-item" href="rolex-women.html">Rolex</a>
+           <a class="dropdown-item" href="women-michael.html">Michael Kors</a>
+           <a class="dropdown-item" href="citizen-women.html">Citizen Eco-Drive</a>
+           <a class="dropdown-item" href="bulova-women.html">Bulova</a>
+         </div>
+         
+       </li>
+       <li class="nav-item dropdown">
+         <a
+           class="nav-link dropdown-toggle"
+           href=" brands"
+           id="collectionsDropdown"
+           role="button"
+           data-toggle="dropdown"
+           aria-haspopup="true"
+           aria-expanded="false"> Collection
+         </a>
+         <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+           <a class="dropdown-item" href="vintage.html">Vintage</a>
+           <a class="dropdown-item" href="smart-watches.html">Smart Watches</a>
+           <a class="dropdown-item" href="luxury.html">Luxury</a>
+         </div>
+         
+       </li>
+     
+       <li class="nav-item">
+         <a class="nav-link" href="Faqs.html">FaQs</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="contact us.html">Contact</a>
+       </li>
+     </ul>
+   </div>
+ </nav>
+ <!-- 25% off card -->
+ <section class="section-four">
+   <div class="section-four-container">
+       <div class="content">
+           <h1 class="section-four-offer" >25% off</h1>
+           <h1 class="section-four-heading">Special Collection</h1>
+           <a href="shop-now.html"> <button class="section-four-btn"  >Shop Now </button></a> 
+       </div>
+   </div>
+</section>
+ <!-- product card -->
+
+<div class="product-section" style="display: flex; flex-wrap: wrap; gap: 50px; justify-content: center;">
+   <!-- 1 -->
+   <div class="product-container">
+      <div class="product-image">
+         <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK7209-0991_1?$large$" alt="">
+      </div>
+      <div class="product-card-content">
+         <div class="product-wrapper">
+            <div class="product-title">
+         Michael-Kors
+            </div>
+            <div class="product-price">
+               <span>$996.99</span>
+            </div>
+            <div class="product-btns">
+               <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+               <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+<!-- 2 -->
+         
+     <div class="product-container">
+        <div class="product-image">
+           <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK9167-0001_1?$large$" alt="">
+        </div>
+        <div class="product-card-content">
+           <div class="product-wrapper">
+              <div class="product-title">
+             Michael-Kors
+              </div>
+            
+              <span class="product-price">$664.99</span>
+             
+             
+              <div class="product-btns">
+               <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+               <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+              </div>
+           </div>
+        </div>
+     </div>
+   <!-- 3   -->
+
+<div class="product-container">
+    <div class="product-image">
+       <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK9166-0310_1?$large$" alt="">
+    </div>
+    <div class="product-card-content">
+       <div class="product-wrapper">
+          <div class="product-title">
+  Michael-Kors
+          </div>
+      
+          <span class="product-price">$991.77</span>
+       
+          <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+          </div>
+       </div>
+    </div>
+ </div>
+<!-- 4 -->
+ <div class="product-container">
+    <div class="product-image">
+       <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK8281-0710_1?$large$" alt="">
+    </div>
+    <div class="product-card-content">
+       <div class="product-wrapper">
+          <div class="product-title">
+            Michael-Kors
+          </div>
+    
+          <span class="product-price">$419.88</span>
+         
+          <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+          </div>
+       </div>
+    </div>
+ </div>
+<!-- 5 -->
+ <div class="product-container">
+   <div class="product-image">
+      <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK9079-0040_1?$large$" alt="">
+   </div>
+   <div class="product-card-content">
+      <div class="product-wrapper">
+         <div class="product-title">
+            Michael-Kors
+         </div>
+   
+         <span class="product-price">$889.66</span>
+        
+       
+         <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 6 -->
+<div class="product-container">
+   <div class="product-image">
+      <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK9162-0710_1?$large$" alt="">
+   </div>
+   <div class="product-card-content">
+      <div class="product-wrapper">
+         <div class="product-title">
+            Michael-Kors
+         </div>
+   
+         <span class="product-price">$664.99</span>
+        
+         
+         <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 7 -->
+<div class="product-container">
+   <div class="product-image">
+      <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK9123-0622_1?$large$" alt="">
+   </div>
+   <div class="product-card-content">
+      <div class="product-wrapper">
+         <div class="product-title">
+            Michael-Kors
+         </div>
+   
+         <span class="product-price">$977.84</span>
+        
+         <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 8 -->
+<div class="product-container">
+   <div class="product-image">
+      <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK9160-0040_1?$large$" alt="">
+   </div>
+   <div class="product-card-content">
+      <div class="product-wrapper">
+         <div class="product-title">
+            Michael-Kors
+         </div>
+   
+         <span class="product-price">$661.88</span>
+       
+         <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 9 -->
+<div class="product-container">
+   <div class="product-image">
+      <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK7354-0255_1?$large$" alt="">
+   </div>
+   <div class="product-card-content">
+      <div class="product-wrapper">
+         <div class="product-title">
+            Michael-Kors
+         </div>
+   
+         <span class="product-price">$444.77</span>
+        
+       
+         <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 10 -->
+<div class="product-container">
+   <div class="product-image">
+      <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MKT5139-0040_1?$large$" alt="">
+   </div>
+   <div class="product-card-content">
+      <div class="product-wrapper">
+         <div class="product-title">
+            Michael-Kors
+         </div>
+   
+         <span class="product-price">$893.77</span>
+        
+        
+         <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 11 -->
+<div class="product-container">
+   <div class="product-image">
+      <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK9157-0800_1?$large$" alt="">
+   </div>
+   <div class="product-card-content">
+      <div class="product-wrapper">
+         <div class="product-title">
+            Michael-Kors
+         </div>
+   
+         <span class="product-price">$316.99</span>
+        
+         <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 12 -->
+<div class="product-container">
+   <div class="product-image">
+      <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK9153-0710_1?$large$" alt="">
+   </div>
+   <div class="product-card-content">
+      <div class="product-wrapper">
+         <div class="product-title">
+            Michael-Kors
+         </div>
+   
+         <span class="product-price">$666.88</span>
+        
+         <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 13 -->
+<div class="product-container">
+   <div class="product-image">
+      <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK9083-0710_1?$large$" alt="">
+   </div>
+   <div class="product-card-content">
+      <div class="product-wrapper">
+         <div class="product-title">
+            Michael-Kors
+         </div>
+   
+         <span class="product-price">$659.33</span>
+        
+         <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 14 -->
+<div class="product-container">
+   <div class="product-image">
+      <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK9156-0400_1?$large$" alt="">
+   </div>
+   <div class="product-card-content">
+      <div class="product-wrapper">
+         <div class="product-title">
+            Michael-Kors
+         </div>
+   
+         <span class="product-price">$454.77</span>
+        
+         <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 15 -->
+<div class="product-container">
+   <div class="product-image">
+      <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK3178-0040_1?$large$" alt="">
+   </div>
+   <div class="product-card-content">
+      <div class="product-wrapper">
+         <div class="title">
+            Michael-Kors
+         </div>
+   
+         <span class="product-price">$256.99</span>
+        
+         <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 16 -->
+<!-- <div class="product-container">
+   <div class="product-image">
+      <img src="https://michaelkors.scene7.com/is/image/MichaelKors/MK7442-0001_1?$large$" alt="">
+   </div>
+   <div class="product-card-content">
+      <div class="product-wrapper">
+         <div class="product-title">
+            Michael-Kors
+         </div>
+   
+         <span class="product-price">$75.99</span>
+        
+         <div class="product-btns">
+            <button onclick="buyNow(' Michael-Kors', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Michael-Kors','$209.99')">Add to cart</button>
+         </div>
+      </div>
+   </div>
+</div> -->
+
+  </div>
+<!-- Footer -->
+<footer class="custom-footer">
+   <div class="custom-container">
+       <div class="row">
+           <div class="col-md-3 footer-col">
+               <h4>Brands</h4>
+               <ul>
+                 <li><a href="rolex.html">Rolex</a></li>
+                 <li><a href="michael-kors.html">Michael Kors</a></li>
+                 <li><a href="citizen.html">Eco-Drive Citizen</a></li>
+                 <li><a href="bulova.html">Bulova</a></li>
+             </ul>
+              
+           </div>
+           <div class="col-md-3 footer-col">
+               <h4>Customer Service </h4>
+               <ul>
+                 <li><a href="my-account.html">My Account</a></li>
+                 <li><a href="return-policy.html">Policy Section</a></li>
+                 <li><a href="contact us.html"> Contact Us </a></li>
+           
+             </ul>
+           </div><div class="col-md-3 footer-col">
+               <h4>Legal</h4>
+               <ul>
+                 <li><a href="about us.html">About us</a></li>
+                   <li><a href="terms-of-service.html">Terms Of Service</a></li>
+       
+                   <li><a href="Faqs.html">FaQs</a></li>
+                   <li><a href="store-locator.html">Store-locator</a></li>
+                  
+               </ul>
+           </div><div class="col-md-3 footer-col">
+               <h4>Follow Us</h4>
+               <div class="social-links">
+                  <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+               </div>
+           </div>
+       </div>
+
+   </div>
+
+</footer>
+<script>
+   // Handle "Buy now" button click
+   function buyNow(productName, productPrice) {
+   
+       localStorage.setItem('productName', productName);
+       localStorage.setItem('productPrice', productPrice);
+       
+       // Redirect to the billing form page
+       window.location.href = 'billing-form.html'; 
+   }
+   
+   // Handle "Add to cart" button click
+   function addToCart(productName, productPrice) {
+   
+       let cart = JSON.parse(localStorage.getItem('cart')) || [];
+       
+       // Add the new product to the cart
+       cart.push({ name: productName, price: productPrice });
+       
+    
+       localStorage.setItem('cart', JSON.stringify(cart));
+       
+     
+       alert('Product added to cart');
+   }
+   </script>
+   </body>
+</html>

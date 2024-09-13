@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury  Watches</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="A.gif" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+<link rel="stylesheet" href="footer.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+      body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 1em; /* Adds space between the cards */
+}
+
+.product-card {
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0 5px 6px #01dbc2;
+    font-family: 'Poppins', sans-serif;
+    margin: 1em;
+    flex: 1 1 calc(20% - 2em);
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: auto; 
+    position: relative; 
+    z-index: 1; 
+}
+
+.product-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid #01dbc2; 
+    border-radius: 10px; 
+    box-sizing: border-box;
+    pointer-events: none; 
+    z-index: 0; 
+    transition: all 0.3s ease; 
+}
+
+.product-card h4 {
+    font-size: 1.3em;
+    margin: 0.3em 0;
+}
+
+.product-card-details {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em; 
+}
+
+.product-card-buttons {
+    display: flex;
+    justify-content: center; 
+    gap: 0.5em; 
+    margin-top: auto; 
+}
+
+.product-card button {
+    background-color: #456abd;
+    color: white;
+    border: none;
+    padding: 0.3em 0.5em; 
+    cursor: pointer;
+    font-size: 0.9em; 
+    flex: 1; 
+    white-space: nowrap; 
+}
+
+.product-card:hover {
+    background-color: grey;
+    color: rgb(255, 255, 255);
+}
+
+.product-card:hover::before {
+    border: 2px solid rgb(255, 255, 255); 
+}
+
+.product-card:hover button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1200px) {
+    .product-card {
+        flex: 1 1 calc(33.33% - 2em);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-card {
+        flex: 1 1 calc(50% - 2em); 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .product-card {
+        flex: 1 1 calc(100% - 2em); 
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="A.gif" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about us.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href=" brands"
+              id="collectionsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Men
+            </a>
+            <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+              <a class="dropdown-item" href="rolex.html">Rolex</a>
+              <a class="dropdown-item" href="michael-kors.html">Michael Kors</a>
+              <a class="dropdown-item" href="citizen.html">Citizen Eco-Drive</a>
+              <a class="dropdown-item" href="bulova.html">Bulova</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href=" brands"
+              id="collectionsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Women
+            </a>
+            <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+              <a class="dropdown-item" href="rolex-women.html">Rolex</a>
+              <a class="dropdown-item" href="women-michael.html"
+                >Michael Kors</a
+              >
+              <a class="dropdown-item" href="citizen-women.html"
+                >Citizen Eco-Drive</a
+              >
+              <a class="dropdown-item" href="bulova-women.html">Bulova</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href=" brands"
+              id="collectionsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Collection
+            </a>
+            <div class="dropdown-menu" aria-labelledby="collectionsDropdown">
+              <a class="dropdown-item" href="vintage.html">Vintage</a>
+              <a class="dropdown-item" href="smart-watches.html">Smart Watches</a>
+              <a class="dropdown-item" href="luxury.html">Luxury</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Faqs.html">FaQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact us.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- product card -->
+    <!-- 1 -->
+    <div class="product-card-container">
+      <div class="product-card">
+        <img src="luxury/19.jpg" alt="" />
+        <h4 >Luxury</h4>
+        <div class="product-card-details">
+          <span>$299.33</span>
+          <div class="product-card-buttons">
+            <button onclick="buyNow(' Luxury', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Luxury','$209.99')">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="product-card">
+        <img src="luxury/luxury 1.jpg" alt="" />
+        <h4>Luxury</h4>
+        <div class="product-card-details">
+          <span>$499.33</span>
+          <div class="product-card-buttons">
+            <button onclick="buyNow(' Luxury', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Luxury','$209.99')">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="product-card">
+        <img src="luxury/10.jpg" alt="" />
+        <h4>Luxury</h4>
+        <div class="product-card-details">
+          <span>$399.33</span>
+          <div class="product-card-buttons">
+            <button onclick="buyNow(' Luxury', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Luxury','$209.99')">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="product-card">
+        <img src="luxury/15.webp" alt="" />
+        <h4 >Luxury</h4>
+        <div class="product-card-details">
+          <span>$899.33</span>
+          <div class="product-card-buttons">
+            <button onclick="buyNow(' Luxury', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Luxury','$209.99')">Add to cart</button>
+          </div>
+        </div>
+      </div>
+     
+      <!-- 5 -->
+      <div class="product-card">
+        <img src="luxury/3.jpg" alt="" />
+        <h4 >Luxury</h4>
+        <div class="product-card-details">
+          <span>$799.33</span>
+          <div class="product-card-buttons">
+            <button onclick="buyNow(' Luxury', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Luxury','$209.99')">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="product-card">
+        <img src=" luxury/5.jpg" alt="" />
+        <h4 >Luxury</h4>
+        <div class="product-card-details">
+          <span>$599.33</span>
+          <div class="product-card-buttons">
+            <button onclick="buyNow(' Luxury', '$209.99')">Buy now</button>
+            <button onclick="addToCart('Luxury','$209.99')">Add to cart</button>
+          </div>
+        </div>
+      </div>
+<!-- 7 -->
+<div class="product-card">
+  <img src="luxury/18.jpg" alt="" />
+  <h4 >Luxury</h4>
+  <div class="product-card-details">
+    <span>$999.33</span>
+    <div class="product-card-buttons">
+      <button onclick="buyNow(' Luxury', '$209.99')">Buy now</button>
+      <button onclick="addToCart('Luxury','$209.99')">Add to cart</button>
+    </div>
+  </div>
+</div>
+    <!-- 8 -->
+    <div class="product-card">
+      <img src=" luxury/12.jpg" alt="" />
+      <h4 >Luxury</h4>
+      <div class="product-card-details">
+        <span>$899.33</span>
+        <div class="product-card-buttons">
+          <button onclick="buyNow(' Luxury', '$209.99')">Buy now</button>
+          <button onclick="addToCart('Luxury','$209.99')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- 9 -->
+    <div class="product-card">
+      <img src="luxury/17.jpg" alt="" />
+      <h4 >Luxury</h4>
+      <div class="product-card-details">
+        <span>$799.33</span>
+        <div class="product-card-buttons">
+          <button onclick="buyNow(' Luxury', '$209.99')">Buy now</button>
+          <button onclick="addToCart('Luxury','$209.99')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- 10 -->
+    <div class="product-card">
+      <img src="luxury/9.jpg" alt="" />
+      <h4 >Luxury</h4>
+      <div class="product-card-details">
+        <span>$785.33</span>
+        <div class="product-card-buttons">
+          <button onclick="buyNow(' Luxury', '$209.99')">Buy now</button>
+          <button onclick="addToCart('Luxury','$209.99')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- 11 -->
+    <div class="product-card">
+      <img src="luxury/6.jpg" alt="" />
+      <h4 >Luxury</h4>
+      <div class="product-card-details">
+        <span>$569.33</span>
+        <div class="product-card-buttons">
+          <button onclick="buyNow(' Luxury', '$209.99')">Buy now</button>
+          <button onclick="addToCart('Luxury','$209.99')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- 12 -->
+    <div class="product-card">
+      <img src="luxury/7.jpg" alt="" />
+      <h4 >Luxury</h4>
+      <div class="product-card-details">
+        <span>$299.33</span>
+        <div class="product-card-buttons">
+          <button onclick="buyNow(' Luxury', '$209.99')">Buy now</button>
+          <button onclick="addToCart('Luxury','$209.99')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- footer css -->
+  <footer class="custom-footer">
+  <div class="custom-container">
+      <div class="row">
+          <div class= "col-md-3 footer-col" >
+              <h4>Brands</h4>
+              <ul>
+                <li><a href="rolex.html">Rolex</a></li>
+                <li><a href="michael-kors.html">Michael Kors</a></li>
+                <li><a href="citizen.html">Eco-Drive Citizen</a></li>
+                <li><a href="bulova.html">Bulova</a></li>
+            </ul>
+             
+          </div>
+          <div class="col-md-3 footer-col">
+              <h4>Customer Service </h4>
+              <ul>
+                <li><a href="my-account.html">My Account</a></li>
+                <li><a href="return-policy.html">Policy Section</a></li>
+                <li><a href="contact us.html"> Contact Us </a></li>
+          
+            </ul>
+          </div><div class="col-md-3 footer-col">
+              <h4>Legal</h4>
+              <ul>
+                <li><a href="about us.html">About us</a></li>
+                  <li><a href="terms-of-service.html">Terms Of Service</a></li>
+               
+                  <li><a href="Faqs.html">FaQs</a></li>
+                  <li><a href="store-locator.html">Store-locator</a></li>
+                 
+              </ul>
+          </div><div class="col-md-3 footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                 <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>
+                 <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                 <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+</footer>
+<script>
+  // Handle "Buy now" button click
+  function buyNow(productName, productPrice) {
+  
+      localStorage.setItem('productName', productName);
+      localStorage.setItem('productPrice', productPrice);
+      
+      // Redirect to the billing form page
+      window.location.href = 'billing-form.html'; 
+  }
+  
+  // Handle "Add to cart" button click
+  function addToCart(productName, productPrice) {
+  
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      
+      // Add the new product to the cart
+      cart.push({ name: productName, price: productPrice });
+      
+   
+      localStorage.setItem('cart', JSON.stringify(cart));
+      
+    
+      alert('Product added to cart');
+  }
+  </script>
+  </body>
+</html>
